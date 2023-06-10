@@ -1,0 +1,77 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #2b283a;
+  font-style: 16px;
+}
+
+/* Typography */
+
+h1 {
+  color: whitesmoke;
+  font-style: 36px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  color: #d0aaff;
+  font-style: 20px;
+  margin: 0;
+}
+
+/* Links  */
+
+a {
+  color: #ef5839;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #d4b44c;
+}
+
+a:active {
+  color: #d4b44c;
+  font-weight: bold;
+}
+
+/* Layout */
+
+header {
+  background-color: #5f29a3;
+  padding: 45px 0;
+}
+
+section {
+  padding: 45px 0;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main-sneakers {
+  width: 100%;
+}
+
+.second-section {
+  background-color: #5f29a3;
+  color: whitesmoke;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.image-section-two {
+  width: 300px;
+
+  border-radius: 4.6px;
+}
