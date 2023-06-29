@@ -3,19 +3,18 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: #2b283a;
-  font-style: 16px;
 }
 
 /* Typography */
 
 h1,
 h3 {
-  margin: 0;
+  margin: 0 auto;
 }
 
 h1 {
   color: whitesmoke;
-  font-style: 36px;
+  font-style: 1rem;
   margin: 0;
 }
 
@@ -58,7 +57,7 @@ header,
 }
 
 .container {
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -115,3 +114,32 @@ footer {
   text-align: center;
   color: #5f29a3;
 }
+
+@media (min-width: 768px) {
+  h1,
+  h3 {
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* Layout */
+
+  header,
+  section,
+  footer {
+    padding: 2.5em 0;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+/* header .container {
+  width: 100%;
+  text-align: center;
+} */
