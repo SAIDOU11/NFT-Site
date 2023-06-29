@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  min-width: 320px;
   color: #2b283a;
 }
 
@@ -20,15 +21,16 @@ h1 {
 
 h2 {
   margin-top: 0;
+  font-size: 1rem;
 }
 
 h3 {
   color: #d0aaff;
-  font-style: 20px;
+  font-style: 1rem;
 }
 
 p {
-  line-height: 23px;
+  line-height: 1.5;
 }
 
 /* Links  */
@@ -48,7 +50,7 @@ a:active {
 header,
 section,
 footer {
-  padding: 45px 0;
+  padding: 2.8px 0;
 }
 
 header,
@@ -56,25 +58,42 @@ header,
   background-color: #5f29a3;
 }
 
+.container-one {
+  margin: 1em;
+  text-align: center;
+}
+
 .container {
-  width: 100%;
-  margin: 0 auto;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-sneakers {
+  width: 70%;
+}
+
+.button-flex {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  text-align: center;
 }
 
 .second-section {
+  margin: 1em;
   color: whitesmoke;
 }
+
 .link-btn-style {
-  margin: 5px 5px 5px 0px;
   display: inline-block;
+  margin: 0.31em 0.31em 0.31em 0;
   text-decoration: none;
   border: none;
-  border-radius: 4.6px;
-  padding: 10px 19px;
+  border-radius: 0.7em;
+  padding: 0.7em 1.125em;
   font-weight: 500;
 }
 
@@ -102,12 +121,14 @@ header,
 
 .image-container {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125em;
 }
+
 .image-section-two {
-  width: 300px;
-  border-radius: 4.6px;
+  width: 100%;
+  border-radius: 0.7em;
 }
 
 footer {
@@ -124,22 +145,59 @@ footer {
     font-size: 2rem;
   }
 
-  /* Layout */
+  h2 {
+    text-align-last: left;
+  }
 
+  /* Layout */
   header,
   section,
   footer {
     padding: 2.5em 0;
   }
+
+  .container-one {
+    margin-left: 1em;
+    text-align: left;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-flex {
+    flex-direction: row;
+  }
+
+  /* image container */
+
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .image-section-two {
+    height: 370px;
+  }
 }
 
 @media (min-width: 1024px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container {
+    gap: 2em;
+  }
 }
 
 @media (min-width: 1280px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
-
-/* header .container {
-  width: 100%;
-  text-align: center;
-} */
